@@ -16,7 +16,8 @@ function App() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://localhost:5000/transcribe", {
+      // const response = await fetch("http://localhost:5000/transcribe", {
+      const response = await fetch("https://autospeech2text-backend.onrender.com/transcribe", {
         method: "POST",
         body: formData,
       });
